@@ -1,0 +1,111 @@
+<!--Developed by Karan Tiwari-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>URL Shortener</title>
+  <link rel="icon" type="image/x-icon" href="fav.png">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+       background-color: #ed9d78;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .parent{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    form {
+      height: 250px;
+      width: 500px;
+      padding: 30px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      border-radius: 40px;
+      background-color: #adf17f;
+      box-shadow: 20px 20px 60px #00000041,inset -20px -20px 60px #ffffff40;
+    }
+
+    label {
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+
+    input[type="url"] {
+      margin-top: 10px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 400px;
+      max-width: 100%;
+    }
+
+    button[type="submit"] {
+      padding: 10px;
+      font-size: 16px;
+      background-color: #1b4067;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0069d9;
+    }
+
+    #short-url {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 20px;
+    }
+
+    #short-url a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    #short-url a:hover {
+      text-decoration: underline;
+    }
+
+    .dev{
+      background-color: #e3a477;
+      color: #111;
+      margin-top: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+  <h1>URL Shortener</h1>
+  
+  <form>
+    <label for="long-url">Long URL:</label>
+    <input type="url" id="long-url" required>
+    <button type="submit">Shorten</button>
+  <div id="short-url"></div>
+  </form>
+</div>
+<footer class="dev">Developed by Karan Tiwari. All rights are Reserved.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
